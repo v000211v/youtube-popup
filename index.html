@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="./js/magnific-popup.css" />
+    <script src="./js/magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto">Open YouTube video</a>
+    <a class="popup-youtube2" href="http://www.youtube.com/watch?v=0O2aH4XLbto">Open YouTube video</a>
+
+    <script>
+      $(document).ready(function () {
+        $('.popup-youtube, .popup-youtube2, .popup-youtube3').magnificPopup({
+          disableOn: 700,
+          type: 'iframe',
+          mainClass: 'mfp-fade',
+          removalDelay: 160,
+          preloader: false,
+
+          fixedContentPos: false
+        })
+      })
+    </script>
+  </body>
+</html>
